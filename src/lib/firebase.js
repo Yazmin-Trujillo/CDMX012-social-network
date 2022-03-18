@@ -54,19 +54,19 @@ onAuthStateChanged(auth, (user) => {
   if (user) {
     // User is signed in, see docs for a list of available properties
     // https://firebase.google.com/docs/reference/js/firebase.User
-    const uid = user.uid;
-    const displayName = user.displayName;
-    const email = user.email;
-    const emailVerified = user.emailVerified;
-    const isAnonymous = user.isAnonymous;
-    const metadata = user.metadata;
-    const multiFactor = user.multiFactor;
-    const phoneNumber = user.phoneNumber;
-    const photoURL = user.photoURL;
-    const providerData = user.providerData;
-    const providerId = user.providerId;
-    const refreshToken = user.refreshToken;
-    const tenantId = user.tenantId;
+    // const uid = user.uid;
+    // const displayName = user.displayName;
+    // const email = user.email;
+    // const emailVerified = user.emailVerified;
+    // const isAnonymous = user.isAnonymous;
+    // const metadata = user.metadata;
+    // const multiFactor = user.multiFactor;
+    // const phoneNumber = user.phoneNumber;
+    // const photoURL = user.photoURL;
+    // const providerData = user.providerData;
+    // const providerId = user.providerId;
+    // const refreshToken = user.refreshToken;
+    // const tenantId = user.tenantId;
 
     console.log(user);
     userActual = user;

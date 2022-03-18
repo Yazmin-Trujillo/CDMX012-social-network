@@ -1,6 +1,7 @@
-import { signInFirebase,userState,emailVerification } from '../lib/firebase.js';
+import { signInFirebase, userState, emailVerification } from '../lib/firebase.js';
 import { navigateTo } from '../lib/navigator.js';
 
+// eslint-disable-next-line no-useless-escape
 const expRegEmail = /^(([^<>()\[\]\\.,;:\s@”]+(\.[^<>()\[\]\\.,;:\s@”]+)*)|(“.+”))@((\[[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}\.[0–9]{1,3}])|(([a-zA-Z\-0–9]+\.)+[a-zA-Z]{2,}))$/;
 /**
 * Cadena de texto HTML para la vista signin.
@@ -152,7 +153,7 @@ function getFormData() {
   };
 }
 
-function dataValidation(formData) {
+export function dataValidation(formData) {
   // const emailInput = document.querySelector('input[name="email"]');
   // const passwordInput = document.querySelector('input[name="password"]');
   // const confirmPasswordInput = document.querySelector('input[name="confirmPassword"]');

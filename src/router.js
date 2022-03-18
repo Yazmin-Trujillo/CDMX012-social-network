@@ -3,7 +3,7 @@ import signin from './views/signin.js';
 import login from './views/login.js';
 import home from './views/home.js';
 import homeUser from './views/homeUser.js';
-import playing from './views/playing.js'
+import playing from './views/playing.js';
 import { navigateTo } from './lib/navigator.js';
 
 const routes = {

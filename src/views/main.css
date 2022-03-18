@@ -200,7 +200,7 @@ main{
 .likedislike .like
 {
 	font-size: 11px;
-	font-family: Verdana;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
 	color: #999;
 }
 
@@ -315,7 +315,7 @@ main{
 }
 .voting{
 	position: relative;
-	border: 3px solid #919191;;
+	border: 3px solid #919191;
 	border-radius: 4px;
 	padding: 5px;
 	display: flex;
