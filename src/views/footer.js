@@ -1,6 +1,5 @@
 export function footer() {
   // Creación de la sección header del muro principal
-  const rootDiv = document.getElementById('root');
   const footerPage = document.createElement('footer');
 
   const footerNav = document.createElement('nav');
@@ -57,7 +56,6 @@ export function footer() {
     messagesNavimage.src = './image/icon/message.png';
   });
 
-  rootDiv.appendChild(footerPage);
   footerPage.append(footerNav);
   footerNav.append(footerItems);
   footerItems.append(homeNav, searchNav, notificationsNav, messagesNav);
@@ -69,5 +67,7 @@ export function footer() {
   notificationsNavLink.append(notificationsNavimage);
   messagesNav.append(messagesNavLink);
   messagesNavLink.append(messagesNavimage);
+
+  return footerPage;
 }
 // footer();

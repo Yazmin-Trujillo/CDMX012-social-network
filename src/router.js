@@ -25,13 +25,22 @@ export const displayView = (route) => {
     return;
   }
 
-  if (view.renderElement) {
+  // Actualizar appContainer segun la funcion render implementada en la vista
+  if (view.renderElements) {
+    appContainer.innerHTML = '';
+
+    const elements = view.renderElements();
+    elements.forEach((el) => {
+      appContainer.appendChild(el);
+    });
+  } else if (view.renderElement) {
     const el = view.renderElement();
     appContainer.innerHTML = '';
     appContainer.appendChild(el);
   } else {
     appContainer.innerHTML = view.render();
   }
+
   if (view.afterRender) {
     view.afterRender();
   }

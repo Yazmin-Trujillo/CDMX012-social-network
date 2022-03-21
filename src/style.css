@@ -19,8 +19,8 @@ body {
     /* background-image: url(); */
     /* background-image: url(); */
 }      
-.container{
-    width:60%;
+#appContainer {
+    width: 100%;
 } 
 
 .title {

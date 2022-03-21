@@ -1,6 +1,5 @@
 export function header() {
   // Creación de la sección header del muro principal
-  const rootDiv = document.getElementById('root');
   const headerPage = document.createElement('header');
   headerPage.classList.add('headerfixed');
   headerPage.classList.add('header');
@@ -67,7 +66,6 @@ export function header() {
   logoutLink.textContent = 'Cerrar Sesión';
 
   // Asignación de elementos a contenedores especificos para el header
-  rootDiv.appendChild(headerPage);
   headerPage.append(profileUser);
   profileUser.append(controlPrincipalUser);
   controlPrincipalUser.append(openMenu, closeMenu);
@@ -92,5 +90,7 @@ export function header() {
 
   headerPage.append(logoPage);
   logoPage.append(imagelogo);
+
+  return headerPage;
 }
 // header();

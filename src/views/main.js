@@ -88,7 +88,6 @@ function mypost() {
 }
 
 export function main() {
-  const rootDiv = document.getElementById('root');
   const mainPage = document.createElement('main');
   mainPage.classList.add('content');
   const mainNoFixed = document.createElement('div');
@@ -159,7 +158,6 @@ export function main() {
   const allPost = document.createElement('div');
   allPost.classList.add('allpost');
 
-  rootDiv.appendChild(mainPage);
   mainPage.append(mainNoFixed);
   mainNoFixed.append(mainPost, allPost);
 
@@ -170,4 +168,6 @@ export function main() {
   post.append(loadImage);
   postBar.append(chooseImage, buttonChooseImage, buttonSendPost);
   buttonChooseImage.appendChild(chooseImageIcon);
+
+  return mainPage;
 }
