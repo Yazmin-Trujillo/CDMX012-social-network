@@ -10,6 +10,18 @@ import {
   sendSignInLinkToEmail,
 } from 'https://www.gstatic.com/firebasejs/9.6.7/firebase-auth.js';
 
+export { initializeApp };
+export { getAnalytics };
+
+export {
+  getAuth,
+  signOut,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+  sendSignInLinkToEmail,
+};
+
 const firebaseConfig = {
   apiKey: 'AIzaSyCqTISmv9xl4M68SQGLo_ELcW00XEBiXPU',
   authDomain: 'social-network-9b189.firebaseapp.com',
@@ -25,7 +37,7 @@ const firebaseConfig = {
 const actionCodeSettings = {
   // URL you want to redirect back to. The domain (www.example.com) for this
   // URL must be in the authorized domains list in the Firebase Console.
-  url: 'www.google.com/',
+  url: 'http://localhost:3000/signin',
   // This must be true.
   handleCodeInApp: true,
   iOS: {

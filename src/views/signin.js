@@ -145,7 +145,7 @@ function getFormData() {
   const emailInput = document.querySelector('input[name="email"]');
   const passwordInput = document.querySelector('input[name="password"]');
   const confirmPasswordInput = document.querySelector('input[name="confirmPassword"]');
-  console.log('emilinput', emailInput);
+  console.log('emailinput', emailInput);
   return {
     email: emailInput.value,
     password: passwordInput.value,
@@ -195,6 +195,7 @@ export function dataValidation(formData) {
   }
   return (email && password && confirmPassword);
 }
+
 /**
  * Realiza validaciones sobre el formulario e intenta hacer un registro si los campos son validos.
  * @param {event} e evento submit
@@ -220,6 +221,7 @@ async function attemptSignIn(e) {
     try {
       await emailVerification(formData.email);
     } catch (err) {
+      alert('manejar error por no poder enviar email', err);
       console.error('manejar error por no poder enviar email', err);
     }
 
@@ -228,7 +230,7 @@ async function attemptSignIn(e) {
     document.getElementById('input-confirm-password').value = '';
 
     // desplegar mensaje
-    alert('se envio correo de verificación');
+    // alert('se envio correo de verificación');
   }
 
   navigateTo('/home');
