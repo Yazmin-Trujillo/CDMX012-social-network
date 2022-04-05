@@ -9,7 +9,7 @@ import { userState } from '../../lib/firebase.js';
 import { idPostEdit, editStatus, editPost } from '../Publications/RendPosts.js';
 import { navigateTo } from '../../lib/navigator.js';
 
-export const PostForm = () => {
+ const PostForm = () => {
     const user = userState();
     const viewInfo = `
 <div id="addPublication" class="wall-container">
